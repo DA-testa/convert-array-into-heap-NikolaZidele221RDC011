@@ -106,8 +106,8 @@ def main():
             print(len(swaps))
             for k in swaps:
                 print(k[0], k[1])
-    else:
-        print("Next time enter I or F value!")
+    # else:
+    #     print("Next time enter I or F value!")
 
 
 if __name__ == "__main__":
