@@ -96,11 +96,11 @@ def main():
     elif letter == "F":
         file = input()
         with open("./tests/" + file, mode='r') as fails:
-            n = fails.readline()
-            numbers = fails.readline()
-            numbers = numbers.split()
-            n = int(input())
-            data = list(map(int, input().split()))
+            viss = fails.read()
+            dala = viss.splitlines()
+            n = int(dala[0])
+            numbers = dala[1]
+            data = list(map(int, numbers.split()))
             assert len(data) == n
             swaps = build_heap(n, data)
             print(len(swaps))
