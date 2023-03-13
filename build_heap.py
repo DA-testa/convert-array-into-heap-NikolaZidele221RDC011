@@ -32,7 +32,7 @@ def otrais(i, data, swaps, n):
 
 def main():
     letter = input()
-    if letter == "I":
+    if "I" in letter:
         n = int(input())
         data = list(map(int, input().split()))
         assert len(data) == n
@@ -40,7 +40,7 @@ def main():
         print(len(swaps))
         for k in swaps:
             print(k[0], k[1])
-    elif letter == "F":
+    elif "F" in letter:
         file = input()
         with open("./tests/" + file, mode='r') as fails:
             viss = fails.read()
