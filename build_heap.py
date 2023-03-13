@@ -95,7 +95,7 @@ def main():
             print(k[0], k[1])
     elif letter == "F" or letter == "f":
         file = input()
-        with open("./test/" + file, mode='r') as fails:
+        with open("./tests/" + file, mode='r') as fails:
             n = fails.readline()
             numbers = fails.readline()
             numbers = numbers.split()
